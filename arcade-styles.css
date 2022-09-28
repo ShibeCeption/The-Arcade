@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: Aldrich, monospace;
+  margin: 0;
+}
+
+.top-bar {
+  width: 100vw;
+  height: 7.5vh;
+  flex-wrap: wrap;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  background-color: rgb(211, 211, 211);
+  padding-left: 1.5vw;
+}
+@media (max-width: 1000px) {
+  .top-bar {
+    height: 10vh;
+  }
+}
+.home:hover,
+.logo:hover,
+.nav-bar-option:hover {
+  transform: scale(125%);
+}
+.nav-bar-option:hover {
+  top: 25px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.home {
+  font-weight: bold;
+}
+.nav-bar-option {
+  position: relative;
+  top: 17.5px;
+}
+.logo {
+  font-weight: bold;
+}
+audio {
+  position: fixed;
+  right: 0;
+}
