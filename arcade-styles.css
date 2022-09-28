@@ -7,15 +7,21 @@ body {
 .top-bar {
   width: 100vw;
   height: 7.5vh;
-  flex-wrap: wrap;
   position: fixed;
   display: flex;
   flex-direction: row;
   gap: 25px;
   background-color: rgb(211, 211, 211);
   padding-left: 1.5vw;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
+  .top-bar {
+    height: 10vh;
+    flex-shrink: 2;
+  }
+}
+@media (max-width: 1500px) {
   .top-bar {
     height: 10vh;
   }
